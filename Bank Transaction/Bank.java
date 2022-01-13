@@ -12,16 +12,16 @@ class Bank{
         Scanner input = new Scanner(System.in);
         System.out.println(" ");
 		    System.out.println(" ");
-        System.out.println("#     #");
+                    System.out.println("#     #");
 		    System.out.println("#  #  # ###### #       ####   ####  #    # ######    #####  ####      ####  #    # #####     #####    ##   #    # #    #");
 		    System.out.println("#  #  # #      #      #    # #    # ##  ## #           #   #    #    #    # #    # #    #    #    #  #  #  ##   # #   #");
 		    System.out.println("#  #  # #####  #      #      #    # # ## # #####       #   #    #    #    # #    # #    #    #####  #    # # #  # ####");
 		    System.out.println("#  #  # #      #      #      #    # #    # #           #   #    #    #    # #    # #####     #    # ###### #  # # #  #");
 		    System.out.println("#  #  # #      #      #    # #    # #    # #           #   #    #    #    # #    # #   #     #    # #    # #   ## #   #");
-        System.out.println(" ## ##  ###### ######  ####   ####  #    # ######      #    ####      ####   ####  #    #    #####  #    # #    # #    #");
-        System.out.println(" ");
+                    System.out.println(" ## ##  ###### ######  ####   ####  #    # ######      #    ####      ####   ####  #    #    #####  #    # #    # #    #");
+                    System.out.println(" ");
 		    System.out.println(" ");
-        System.out.println("===============================================");
+                    System.out.println("===============================================");
 		    System.out.println("===============================================");
 		    System.out.println(" ");
 		    System.out.println(" ");
@@ -69,7 +69,7 @@ class Bank{
 		System.out.println("  #   ###### #    # # #  # ####        #   #    # #    #");
 		System.out.println("  #   #    # ###### #  # # #  #        #   #    # #    #");
 		System.out.println("  #   #    # #    # #   ## #   #       #   #    # #    #");
-    System.out.println("  #   #    # #    # #    # #    #      #    ####   ####");
+                System.out.println("  #   #    # #    # #    # #    #      #    ####   ####");
     }
     public static void main(String [] args){
 		Bank ob = new Bank();
