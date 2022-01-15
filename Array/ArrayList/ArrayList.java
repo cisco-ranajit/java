@@ -3,7 +3,8 @@ import java.util.Collections;
  
 public class ArrayList{
    public static void main(String args[]) {
-    ArrayList<Integer> list = new ArrayList<>();
+    ArrayList<Integer> list = new ArrayList<>();  //for integer value
+    //ArrayList<String> list = new ArrayList<>(); //for string value
     //add elements
     list.add(0);  //index[0]
     list.add(2);  //index[1]
