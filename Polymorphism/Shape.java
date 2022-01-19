@@ -69,19 +69,45 @@ class Circle extends Shape{
         System.out.println("the area of Circle is "+NewValue);
     }
 }
-class Cylinder extends Shape{
-    
-}
     class DemoShape{
         public static void main(String[] args) {
             Shape ob;
-            ob = new Square();
-            ob.input();
-            ob.area();
-            ob.show();
-            ob = new Circle();
-            ob.input();
-            ob.area();
-            ob.show();
+            
+            Scanner input = new Scanner(System.in);
+            System.out.println("choose 1 to 4");
+            System.out.println("1. calculate area of Square ");
+            System.out.println("2. calculate area of rectangle");
+            System.out.println("3. calculate area of triangle");
+            System.out.println("4. calculate area of circule");
+            int numbers = input.nextInt();
+           switch (numbers) {
+               case 1:
+               ob = new Square();
+               ob.input();
+               ob.area();
+               ob.show();
+                   break;
+                   case 2:
+                   ob = new Rectangle();
+                   ob.input();
+                   ob.area();
+                   ob.show();
+                   break;
+                   case 3:
+                   ob = new Triangle();
+                   ob.input();
+                   ob.area();
+                   ob.show();
+                   break;
+                   case 4:
+                   ob = new Circle();
+                   ob.input();
+                   ob.area();
+                   ob.show();
+                   break;
+               default:
+               System.out.println("you have entered wrong number, choose 1 to 4");
+                   break;
+           }
     }
 }
