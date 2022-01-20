@@ -1,240 +1,52 @@
-# java-If-else
+Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).
 
+The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
 
-In programming, we use the if..else statement to run a block of code among more than one alternatives.
+The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.
 
-For example, assigning grades (A, B, C) based on the percentage obtained by a student.
+Java is −
 
-    if the percentage is above 90, assign grade A
-    if the percentage is above 75, assign grade B
-    if the percentage is above 65, assign grade C
+    Object Oriented − In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
 
-1. Java if (if-then) Statement
+    Platform Independent − Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
 
-The syntax of an if-then statement is:
+    Simple − Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
 
-if (condition) {
-  // statements
-}
+    Secure − With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
 
-Here, condition is a boolean expression such as age >= 18.
+    Architecture-neutral − Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
 
-    if condition evaluates to true, statements are executed
-    if condition evaluates to false, statements are skipped
+    Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.
 
-Working of if Statement
-if the number is greater than 0, code inside if block is executed, otherwise code inside if block is skipped
-Working of Java if statement
-Example 1: Java if Statement
+    Robust − Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
 
-class IfStatement {
-  public static void main(String[] args) {
+    Multithreaded − With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
 
-    int number = 10;
+    Interpreted − Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
 
-    // checks if number is less than 0
-    if (number < 0) {
-      System.out.println("The number is negative.");
-    }
+    High Performance − With the use of Just-In-Time compilers, Java enables high performance.
 
-    System.out.println("Statement outside if block");
-  }
-}
+    Distributed − Java is designed for the distributed environment of the internet.
 
-Output
+    Dynamic − Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
 
-Statement outside if block
+History of Java
 
-In the program, number < 0 is false. Hence, the code inside the parenthesis is skipped.
+James Gosling initiated Java language project in June 1991 for use in one of his many set-top box projects. The language, initially called ‘Oak’ after an oak tree that stood outside Gosling's office, also went by the name ‘Green’ and ended up later being renamed as Java, from a list of random words.
 
-Note: If you want to learn more about about test conditions, visit Java Relational Operators and Java Logical Operators.
+Sun released the first public implementation as Java 1.0 in 1995. It promised Write Once, Run Anywhere (WORA), providing no-cost run-times on popular platforms.
 
-We can also use Java Strings as the test condition.
-Example 2: Java if with String
+On 13 November, 2006, Sun released much of Java as free and open source software under the terms of the GNU General Public License (GPL).
 
-class Main {
-  public static void main(String[] args) {
-    // create a string variable
-    String language = "Java";
+On 8 May, 2007, Sun finished the process, making all of Java's core code free and open-source, aside from a small portion of code to which Sun did not hold the copyright.
+Tools You Will Need
 
-    // if statement
-    if (language == "Java") {
-      System.out.println("Best Programming Language");
-    }
-  }
-}
+For performing the examples discussed in this tutorial, you will need a Pentium 200-MHz computer with a minimum of 64 MB of RAM (128 MB of RAM recommended).
 
-Output
+You will also need the following softwares −
 
-Best Programming Language
+    Linux 7.1 or Windows xp/7/8 operating system
+    Java JDK 8
+    Microsoft Notepad or any other text editor
 
-In the above example, we are comparing two strings in the if block.
-2. Java if...else (if-then-else) Statement
-
-The if statement executes a certain section of code if the test expression is evaluated to true. However, if the test expression is evaluated to false, it does nothing.
-
-In this case, we can use an optional else block. Statements inside the body of else block are executed if the test expression is evaluated to false. This is known as the if-...else statement in Java.
-
-The syntax of the if...else statement is:
-
-if (condition) {
-  // codes in if block
-}
-else {
-  // codes in else block
-}
-
-Here, the program will do one task (codes inside if block) if the condition is true and another task (codes inside else block) if the condition is false.
-How the if...else statement works?
-If the condition is true, the code inside the if block is executed, otherwise, code inside the else block is executed
-Working of Java if-else statements
-Example 3: Java if...else Statement
-
-class Main {
-  public static void main(String[] args) {
-    int number = 10;
-
-    // checks if number is greater than 0
-    if (number > 0) {
-      System.out.println("The number is positive.");
-    }
-    
-    // execute this block
-    // if number is not greater than 0
-    else {
-      System.out.println("The number is not positive.");
-    }
-
-    System.out.println("Statement outside if...else block");
-  }
-}
-
-Output
-
-The number is positive.
-Statement outside if...else block
-
-In the above example, we have a variable named number. Here, the test expression number > 0 checks if number is greater than 0.
-
-Since the value of the number is 10, the test expression evaluates to true. Hence code inside the body of if is executed.
-
-Now, change the value of the number to a negative integer. Let's say -5.
-
-int number = -5;
-
-If we run the program with the new value of number, the output will be:
-
-The number is not positive.
-Statement outside if...else block
-
-Here, the value of number is -5. So the test expression evaluates to false. Hence code inside the body of else is executed.
-3. Java if...else...if Statement
-
-In Java, we have an if...else...if ladder, that can be used to execute one block of code among multiple other blocks.
-
-if (condition1) {
-  // codes
-}
-else if(condition2) {
-  // codes
-}
-else if (condition3) {
-  // codes
-}
-.
-.
-else {
-  // codes
-}
-
-Here, if statements are executed from the top towards the bottom. When the test condition is true, codes inside the body of that if block is executed. And, program control jumps outside the if...else...if ladder.
-
-If all test expressions are false, codes inside the body of else are executed.
-How the if...else...if ladder works?
-If the first test condition if true, code inside first if block is executed, if the second condition is true, block inside second if is executed, and if all conditions are false, the else block is executed
-Working of if...else...if ladder
-Example 4: Java if...else...if Statement
-
-class Main {
-  public static void main(String[] args) {
-
-    int number = 0;
-
-    // checks if number is greater than 0
-    if (number > 0) {
-      System.out.println("The number is positive.");
-    }
-
-    // checks if number is less than 0
-    else if (number < 0) {
-      System.out.println("The number is negative.");
-    }
-    
-    // if both condition is false
-    else {
-      System.out.println("The number is 0.");
-    }
-  }
-}
-
-Output
-
-The number is 0.
-
-In the above example, we are checking whether number is positive, negative, or zero. Here, we have two condition expressions:
-
-    number > 0 - checks if number is greater than 0
-    number < 0 - checks if number is less than 0
-
-Here, the value of number is 0. So both the conditions evaluate to false. Hence the statement inside the body of else is executed.
-
-Note: Java provides a special operator called ternary operator, which is a kind of shorthand notation of if...else...if statement. To learn about the ternary operator, visit Java Ternary Operator.
-4. Java Nested if..else Statement
-
-In Java, it is also possible to use if..else statements inside an if...else statement. It's called the nested if...else statement.
-
-Here's a program to find the largest of 3 numbers using the nested if...else statement.
-Example 5: Nested if...else Statement
-
-class Main {
-  public static void main(String[] args) {
-
-    // declaring double type variables
-    Double n1 = -1.0, n2 = 4.5, n3 = -5.3, largest;
-
-    // checks if n1 is greater than or equal to n2
-    if (n1 >= n2) {
-
-      // if...else statement inside the if block
-      // checks if n1 is greater than or equal to n3
-      if (n1 >= n3) {
-        largest = n1;
-      }
-
-      else {
-        largest = n3;
-      }
-    } else {
-
-      // if..else statement inside else block
-      // checks if n2 is greater than or equal to n3
-      if (n2 >= n3) {
-        largest = n2;
-      }
-
-      else {
-        largest = n3;
-      }
-    }
-
-    System.out.println("Largest Number: " + largest);
-  }
-}
-
-Output:
-
-Largest Number: 4.5
-
-In the above programs, we have assigned the value of variables ourselves to make this easier.
-
-However, in real-world applications, these values may come from user input data, log files, form submission, etc.
+This tutorial will provide the necessary skills to create GUI, networking, and web applications using Java.
