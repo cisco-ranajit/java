@@ -177,18 +177,43 @@ public class Demo2DArray {
         }
         input.close();
     }
+    void identity() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the base of squared matrices");
+        System.out.println(" ");
+        int n = input.nextInt();
+        System.out.println(" ");
+        System.out.println("the identity matrix ::");
+        System.out.println(" ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == j) {
+                    System.out.print(1 + " ");
+                } else {
+                    System.out.print(0 + " ");
+                }
+            }
+            System.out.println();
+        }
+        input.close();
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Demo2DArray ob;
         ob = new Demo2DArray();
         System.out.println("1. Declaration of 2-D Array");
+        System.out.println(" ");
         System.out.println("2. Multiplicaion of 2-D Array (Matrix");
+        System.out.println(" ");
         System.out.println("3. Additon of 2-D Array (Matrix)");
+        System.out.println(" ");
         System.out.println("4. Substraction of 2-D Array (Matrix)");
         System.out.println(" ");
+        System.out.println("5. Identity Matrix");
         System.out.println(" ");
-        System.out.println("choose between 1 to 3");
+        System.out.println(" ");
+        System.out.println("choose between 1 to 5");
         int number = input.nextInt();
         switch (number) {
             case 1:
@@ -203,10 +228,14 @@ public class Demo2DArray {
             case 4:
                 ob.Substraction();
                 break;
+            case 5:
+                ob.identity();
+                break;
             default:
                 System.out.println("you entered invalid number, please enter number 1 t0 3");
                 break;
         }
+        input.close();
 
     }
 
