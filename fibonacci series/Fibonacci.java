@@ -1,4 +1,4 @@
-package com.ranajit;
+
 import java.util.Scanner;
 public class Fibonacci {
     public static int FibonacciSerise(int n){
